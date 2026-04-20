@@ -25,9 +25,13 @@ New features
   skipped as a duplicate, or the import was aborted), and in non-move import
   modes.
 
-..
-    Bug fixes
-    ~~~~~~~~~
+Bug fixes
+~~~~~~~~~
+
+- :ref:`import-cmd` Fix duplicate album art files (e.g. ``cover.2.jpg``) being
+  created when re-importing albums with the :doc:`plugins/fetchart` plugin
+  enabled. Old album art is now properly removed when replacing duplicate albums
+  during import. :bug:`1264` :bug:`6205`
 
 ..
     For plugin developers
